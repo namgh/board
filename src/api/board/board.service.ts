@@ -26,4 +26,9 @@ export class BoardService {
 
     return result;
   }
+
+  async deleteBoard(id: number) {
+    const result = await this.boardRepository.softDelete({ id });
+    return result.affected ? true : false;
+  }
 }
