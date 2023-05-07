@@ -17,7 +17,7 @@ import { ConfigModule } from '@nestjs/config';
       password: 'root',
       database: 'board',
       entities: [__dirname + '/api/**/*.entity.*'],
-      synchronize: true,
+      synchronize: false,
       logging: true,
     }),
   ],
