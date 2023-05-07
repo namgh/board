@@ -18,6 +18,7 @@ export class BoardService {
       content: inputBoard.content,
     });
     const result = new BoardResponse();
+
     result.id = board.id;
     result.content = board.content;
     result.createdAt = board.createdAt;

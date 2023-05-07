@@ -1,0 +1,30 @@
+{
+  "order": 0,
+  "index_patterns": ["board"],
+  "template": "board",
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "korean_analyzer": {
+          "type": "custom",
+          "tokenizer": "seunjeon_default_tokenizer"
+        }
+      },
+      "tokenizer": {
+        "seunjeon_default_tokenizer": {
+          "type": "seunjeon_tokenizer",
+          "index_eojeol": "false",
+          "decompound": "false"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "content": {
+        "type": "text",
+        "analyzer": "korean_analyzer"
+      }
+    }
+  }
+}

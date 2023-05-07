@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:16
 
 WORKDIR /my_backend/
 COPY ./package.json /my_backend/

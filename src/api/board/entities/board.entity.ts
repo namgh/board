@@ -10,7 +10,7 @@ import {
 @Entity()
 export class Board {
   @PrimaryGeneratedColumn()
-  id: Number;
+  id: number;
 
   @Column()
   title: string;
